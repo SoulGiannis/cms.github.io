@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CMS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container,.container_last{
+                margin:10px;
+                width:90em;
+                height:10vh;
+                display:flex;
+                align-items:center;
+                justify-content: center;
+                background-color: black;
+                color: white;
+                border-bottom: 2px solid black;
+            }
+            .logo{
+                width:50em;                
+                justify-content: flex-start;
+            }           
+            .container_two{
+                margin:10px;
+                width:90em;
+                height:10vh;
+                display:flex;
+                align-items:center;
+                justify-content: space-around;                
+            }
+            .header_button,.logout{
+                width:120px;
+                height:40px;
+                cursor: pointer;
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+            }
+            .container_three{                
+                width:90em;
+                height:70vh;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                 border:5px solid black;
+                 background-color: black;
+            }
+            .bg_three{
+                display:flex;
+                align-items: flex-end;
+                justify-content:center; 
+                background-image:url("images/crime2.jpg");
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                height:70vh;
+                width:90em;               
+            }
+            .container_four, .container_five{
+                margin:20px;
+                width:90em;
+                height:60vh;
+                display:flex;
+                align-items:center;
+                justify-content:center; 
+                
+            }
+            .bg_four{
+                display:flex;
+                align-items: flex-end;
+                justify-content:center; 
+                background-image:url("images/crime.jpg");
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                height:60vh;
+                width:45em;
+            }
+            .bg_five{
+                display:flex;
+                align-items: flex-end;
+                justify-content:center; 
+                background-image:url("images/crime3.jpg");
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                height:60vh;
+                width:45em;
+            }
+            .column{
+                float:left;
+                width:45em;
+                background-color:black;
+                margin-right:20px;
+                border:5px solid black;
+            }
+           
+            .text{
+                color:white;
+            }
+            a{
+                text-decoration: none;
+                color:white;
+            }
+            .a{
+                border:5px solid black;
+                text-decoration: none;
+                font-size:36px;
+                color:black;
+            }
+            .viewstaff{
+                background-color: black;
+                color:white;
+                border:1px solid black;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <h1 class="logo">CRIME RECORDS MANAGEMENT SYSTEM</h1>            
+            <button class="logout"><a href="logout">logout</a></button>
+            
+        </div>
+        
+        <div class="container_two">
+            <button class="header_button"><a href="index.html">Home</a></button>   
+            <button class="header_button"><a href="addstaff.jsp">Add Staff</a></button>   
+            <form action="viewstaff"><button class="header_button"><input class="viewstaff" type="submit" value="View Staff"></button></form>      
+            <button class="header_button"><a href="viewcases.jsp">View Cases</a></button>               
+        </div>
+        
+        <div class="container_three">
+            <div class="bg_three">
+                <a class="a" href="viewcases.jsp">View Cases</a>
+            </div>
+        </div>
+        
+        <div class="container_four">
+            <div class="column bg_four">
+                <a class="a" href="addstaff.jsp">Add Staff</a>
+            </div>
+            <div class="column ">
+                <h1  class="text">Add or Update current staff<br> just by filling one form</h1>
+            </div>
+        </div>
+        
+        <div class="container_five">            
+            <div class="column">
+                <h1 class="text">View Present working staff and staff that <br> has been newly addmited</h1>
+            </div>
+            <div class="column bg_five">
+                <a class="a" href="viewstaff">View Staff</a>
+            </div>
+        </div>
+        
+        <div class="container_last">
+            <h1>© Copyright 2014, All Rights Reserved CMS.com</h1>
+        </div>
+    </body>
+</html>
